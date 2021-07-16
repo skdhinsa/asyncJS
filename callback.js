@@ -12,5 +12,5 @@ function thirdAction() {
   console.log("Third action");
 }
 
-// callback must not have paranthesis -> so if args passed turn into anon function
+// callback must not have parenthesis -> so if args passed turn into anon function
 setTimeout(() => firstAction(() => secondAction("Second action "),"First action",thirdAction), 3000);
